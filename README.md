@@ -15,7 +15,7 @@ $ npx create-react-app password-validator-testing
 3. Configure your Enzyme environment
 
 ```
-$ enzyme enzyme-adapter-react-16 react-test-renderer
+$ npm install enzyme enzyme-adapter-react-16 react-test-renderer
 ```
 
 Also, add the following code to your `setupTests.js`
