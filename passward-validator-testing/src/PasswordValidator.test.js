@@ -21,7 +21,7 @@ describe("PasswordValidator component", () => {
     expect(component.state("password")).toBe("secret")
   })
 
-  it("should have updated state for password", () => {
+  it("should have updated state for confirmation password", () => {
     component.find(".confirm-password").simulate("change", { target: { value: "secret2" } })
     expect(component.state("passwordConfirm")).toBe("secret2")
   })
@@ -33,7 +33,7 @@ describe("PasswordValidator component", () => {
 
   it("should have updated state for warning message", () => {
     component.find("p").simulate("change", { target: { value: "true" } })
-    expect(component.state("valid")).toBe(true)
+    expect(component.contains("valid")).toBe(true)
   })
 
 })

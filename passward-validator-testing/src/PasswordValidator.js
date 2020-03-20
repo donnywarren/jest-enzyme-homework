@@ -50,7 +50,7 @@ class PasswordValidator extends Component {
         <input className="password" onChange={this.handlePasswordChange} type="password" placeholder="password" />
         <input className="confirm-password" onChange={this.handlePasswordConfirm} type="password" placeholder="confirm password" />
         <button onClick={this.validSubmit}>Submit</button>
-        <p>Your passwords are: {this.state.valid}</p>
+        <p>Your passwords are: {this.state.valid ? "valid" : "not valid"}</p>
       </div>
     );
   }
